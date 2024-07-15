@@ -1,0 +1,9 @@
+<servlet>
+    <servlet-name>RegistroServlet</servlet-name>
+    <servlet-class>servlets.RegistroServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RegistroServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+</servlet-mapping>
