@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play | Open source Project by UIdeck</title>
+
+    <!--====== Favicon Icon ======-->
+
+    <!-- ===== All CSS files ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" />
+    <link rel="stylesheet" href="assets/css/ud-styles.css" />
+	
+	<!-- ===== Sweet Alert ===== -->
+	<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+	
+  </head>
+  <body>
+    <!-- ====== Header Start ====== -->
+    <header class="header">
+      <div class="logo">
+          <img src="assets/img/iconos/logocac.png" alt="Logo"> 
+          <span> <i class='bx bx-camera-movie' style='color:#ffffff' ></i> MoviesCaC </span>
+      </div>
+    <div class="nav-buttons">
+        <a class="ud-menu-scroll" href="../moviescacFE/moviescacdb.html"> <i class='bx bx-list-ul' ></i> Listado de Peliculas SQL </a>
+    </div>
+      <div class="nav-buttons">
+          <a href="index.html"> <i class='bx bx-home' style='color:#ffffff' ></i></a>
+          <a href="logear.html"> <i class='bx bxs-user-detail' style='color:#ffffff' ></i> Iniciar Sesión / Registrar</a>
+      </div>
+  </header>
+  <header class="ud-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler">
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+            </button>
+            <div class="navbar-collapse">
+              <ul id="nav" class="navbar-nav mx-auto">
+                <li class="nav-item">
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+                  
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== Banner Start ====== -->
+    <section class="ud-page-banner" style="padding-bottom:0px;padding-top:60px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Banner End ====== -->
+	
+	<!--	  
+		(titulo, genero, duracion, imagen)
+	-->
+
+    <!-- ====== Contact Start ====== -->
+    <section id="contact" class="ud-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-4 col-lg-5 offset-lg-4">
+            <div
+			  style="width:110%"
+              class="ud-contact-form-wrapper wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <h3 class="ud-contact-form-title" style="text-align: center;">Insertar Película</h3>
+              <form id="myForm" class="ud-contact-form" method="post" onsubmit="return postMovie(event)">
+                <div class="ud-form-group">
+                  <label for="titulo">Título</label>
+                  <input
+                    id="titulo"
+                    type="text"
+                    name="titulo"
+                  />
+                </div>
+                <div class="ud-form-group">
+                  <label for="genero">Genero</label>
+                  <input
+                    id="genero"
+                    type="text"
+                    name="genero"
+                  />
+                </div>
+                <div class="ud-form-group">
+                  <label for="duracion">Duración</label>
+                  <input
+                    id="duracion"
+                    type="text"
+                    name="duracion"                   
+                  />
+                </div>
+                <div class="ud-form-group">
+                  <label for="Imagen">Imagen</label>
+                  <input
+                    id="imagen"
+                    type="text"
+                    name="imagen"                   
+                  />
+                </div>
+                <div class="ud-form-group mb-0">
+                  <div class="row">
+                    <button id="btnSubmit" type="submit" class="ud-main-btn">
+                      Insertar
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Contact End ====== -->
+
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+      <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
+
+    <!-- ====== All Javascript Files ====== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
