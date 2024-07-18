@@ -1,0 +1,4 @@
+com\ar\peliculas\Conexion.class
+com\ar\peliculas\Controlador.class
+com\ar\peliculas\CorsFilter.class
+com\ar\peliculas\Pelicula.class
